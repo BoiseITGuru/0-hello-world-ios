@@ -11,7 +11,7 @@ import FCL
 struct SignInView: View {
     var body: some View {
         VStack {
-            Text("0-HELLO-WORLD")
+            Text("HELLO-WORLD")
                 .font(.largeTitle)
                 .foregroundColor(.defualtAccentColor)
                 .padding(.bottom, 20)

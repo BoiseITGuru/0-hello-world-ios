@@ -31,6 +31,7 @@ struct HelloWorldView: View {
             Text(greetingDisplay)
                 .font(.title)
                 .frame(maxWidth: .infinity, maxHeight: 200)
+                .foregroundStyle(Color.white)
                 .background(Color.secondaryAccentColor)
                 .cornerRadius(15)
                 .overlay(
@@ -41,6 +42,7 @@ struct HelloWorldView: View {
             
             TextField("Change Greeting", text: $greetingText)
                 .submitLabel(.send)
+                .foregroundStyle(Color.white)
                 .onSubmit {
                     guard greetingText.isEmpty == false else { return }
                     Task { await changeGreeting() }
@@ -72,6 +74,9 @@ struct HelloWorldView: View {
     }
     
     func getGreeting() async {
+        await MainActor.run {
+            greetingDisplay = ""
+        }
         do {
             let block = try await fcl.query {
                 cadence {

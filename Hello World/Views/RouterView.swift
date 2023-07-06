@@ -10,6 +10,7 @@ import FCL
 
 struct RouterView: View {
     @State var loggedIn: Bool = false
+    @State var pendingTx: Bool = false
     
     var body: some View {
         ZStack {
@@ -24,12 +25,15 @@ struct RouterView: View {
             }
             .padding(.horizontal, 20)
             
-            if (FlowManager.shared.pendingTx != nil) {
+            if pendingTx {
                 WaitingView(label: "Processing Transaction")
             }
         }
         .onReceive(fcl.$currentUser) { user in
             self.loggedIn = (user != nil)
+        }
+        .onReceive(FlowManager.shared.$pendingTx) { tx in
+            self.pendingTx = (tx != nil)
         }
     }
 }

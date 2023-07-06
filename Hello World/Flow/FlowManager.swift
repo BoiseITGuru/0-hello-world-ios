@@ -10,7 +10,7 @@ import Flow
 import Foundation
 import UIKit
 
-let testAccount = "YOUR TESTNET ACCOUNT"
+let testAccount = "YOUR TEST ACCOUNT"
 
 class FlowManager: ObservableObject {
     static let shared = FlowManager()
@@ -45,7 +45,7 @@ class FlowManager: ObservableObject {
     }
 
     func setup() {
-        let defaultProvider: FCL.Provider = .blocto
+        let defaultProvider: FCL.Provider = .lilico
         let defaultNetwork: Flow.ChainID = .testnet
         let accountProof = FCL.Metadata.AccountProofConfig(appIdentifier: "Hello World")
         let metadata = FCL.Metadata(appName: "Hello World",

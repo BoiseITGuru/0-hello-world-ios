@@ -15,10 +15,10 @@ struct WaitingView: View {
             ProgressView()
             Text(label)
                 .font(.title2)
-                .foregroundStyle(Color.defaultTextColor)
+                .foregroundStyle(Color.white)
         }
-        .frame(width: 100, height: 100)
-        .background(Color.defualtBackgroundColor)
+        .frame(width: 200, height: 200)
+        .background(Color.secondaryAccentColor)
         .cornerRadius(15)
         .overlay(
             RoundedRectangle(cornerRadius: 15)
