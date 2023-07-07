@@ -45,8 +45,8 @@ class FlowManager: ObservableObject {
     }
 
     func setup() {
-        let defaultProvider: FCL.Provider = .lilico
-        let defaultNetwork: Flow.ChainID = .testnet
+        let defaultProvider: FCL.Provider = .devWallet
+        let defaultNetwork: Flow.ChainID = .emulator
         let accountProof = FCL.Metadata.AccountProofConfig(appIdentifier: "Hello World")
         let metadata = FCL.Metadata(appName: "Hello World",
                                     appDescription: "Hello Word Demo App for Emerald Academy",
@@ -58,6 +58,6 @@ class FlowManager: ObservableObject {
                    provider: defaultProvider)
 
         fcl.config
-            .put("0xDeployer", value: testAccount)
+            .put("0xDeployer", value: fcl.currentEnv == .emulator ? "0xf8d6e0586b0a20c7" : testAccount)
     }
 }
