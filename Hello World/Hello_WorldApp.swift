@@ -20,7 +20,7 @@ struct Hello_WorldApp: App {
     init() {
         let defaultProvider: FCL.Provider = .devWallet
         let defaultNetwork: Flow.ChainID = .emulator
-        let accountProof = FCL.Metadata.AccountProofConfig(appIdentifier: "Hello World")
+        let accountProof = FCL.Metadata.AccountProofConfig(appIdentifier: title)
         let walletConnect = FCL.Metadata.WalletConnectConfig(urlScheme: "helloWorld://", projectID: walletConnectID)
         let metadata = FCL.Metadata(appName: "Hello World",
                                     appDescription: "Hello Word Demo App for Emerald Academy",
