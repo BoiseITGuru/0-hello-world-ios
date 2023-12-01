@@ -3,20 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2B1A5FEF2A5492780068F85E /* HelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A5FEE2A5492780068F85E /* HelloWorldView.swift */; };
 		2B1A5FFE2A54A32F0068F85E /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A5FFC2A54A32F0068F85E /* Transactions.swift */; };
 		2B1A5FFF2A54A32F0068F85E /* Scripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A5FFD2A54A32F0068F85E /* Scripts.swift */; };
+		2B30DBB82B196C5400241D82 /* ecDAO in Frameworks */ = {isa = PBXBuildFile; productRef = 2B30DBB72B196C5400241D82 /* ecDAO */; };
 		2BBFE86C2A548AF600471E99 /* Hello_WorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFE86B2A548AF600471E99 /* Hello_WorldApp.swift */; };
 		2BBFE8702A548AF700471E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBFE86F2A548AF700471E99 /* Assets.xcassets */; };
 		2BBFE8742A548AF700471E99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBFE8732A548AF700471E99 /* Preview Assets.xcassets */; };
 		2BC661262B1861A20094F320 /* ecDAO in Frameworks */ = {isa = PBXBuildFile; productRef = 2BC661252B1861A20094F320 /* ecDAO */; };
 		2BC6612C2B1909E40094F320 /* ecDAO in Frameworks */ = {isa = PBXBuildFile; productRef = 2BC6612B2B1909E40094F320 /* ecDAO */; };
 		2BC6612E2B1933590094F320 /* SwiftCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6612D2B1933590094F320 /* SwiftCode.swift */; };
-		2BC661312B19353A0094F320 /* ecDAO in Frameworks */ = {isa = PBXBuildFile; productRef = 2BC661302B19353A0094F320 /* ecDAO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BC661312B19353A0094F320 /* ecDAO in Frameworks */,
+				2B30DBB82B196C5400241D82 /* ecDAO in Frameworks */,
 				2BC661262B1861A20094F320 /* ecDAO in Frameworks */,
 				2BC6612C2B1909E40094F320 /* ecDAO in Frameworks */,
 			);
@@ -121,7 +121,7 @@
 			packageProductDependencies = (
 				2BC661252B1861A20094F320 /* ecDAO */,
 				2BC6612B2B1909E40094F320 /* ecDAO */,
-				2BC661302B19353A0094F320 /* ecDAO */,
+				2B30DBB72B196C5400241D82 /* ecDAO */,
 			);
 			productName = "Hello World";
 			productReference = 2BBFE8682A548AF600471E99 /* Hello World.app */;
@@ -152,7 +152,7 @@
 			);
 			mainGroup = 2BBFE85F2A548AF600471E99;
 			packageReferences = (
-				2BC6612F2B19353A0094F320 /* XCRemoteSwiftPackageReference "Emerald-City-DAO-Component-Library" */,
+				2B30DBB62B196C5400241D82 /* XCLocalSwiftPackageReference "../../../Forge4Flow/ecosystem_sdks/ecDAO" */,
 			);
 			productRefGroup = 2BBFE8692A548AF600471E99 /* Products */;
 			projectDirPath = "";
@@ -418,29 +418,24 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		2BC6612F2B19353A0094F320 /* XCRemoteSwiftPackageReference "Emerald-City-DAO-Component-Library" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Forge4Flow/Emerald-City-DAO-Component-Library";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.2;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		2B30DBB62B196C5400241D82 /* XCLocalSwiftPackageReference "../../../Forge4Flow/ecosystem_sdks/ecDAO" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../../Forge4Flow/ecosystem_sdks/ecDAO;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2B30DBB72B196C5400241D82 /* ecDAO */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ecDAO;
+		};
 		2BC661252B1861A20094F320 /* ecDAO */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ecDAO;
 		};
 		2BC6612B2B1909E40094F320 /* ecDAO */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ecDAO;
-		};
-		2BC661302B19353A0094F320 /* ecDAO */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2BC6612F2B19353A0094F320 /* XCRemoteSwiftPackageReference "Emerald-City-DAO-Component-Library" */;
 			productName = ecDAO;
 		};
 /* End XCSwiftPackageProductDependency section */

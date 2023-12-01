@@ -25,9 +25,8 @@ struct HelloWorldView: View {
             getGreetingView
             
             changeGreetingView
-            
-            Spacer()
         }
+        .frame(maxHeight: .infinity, alignment: .top)
         .sheet(isPresented: $showCodeSheet, onDismiss: { codeConfig.codeType = .swift }) {
             CodeSheet(codeType: $codeConfig.codeType, title: $codeConfig.title, description: $codeConfig.description, swiftCode: $codeConfig.swiftCode, cadenceCode: $codeConfig.cadenceCode)
         }
@@ -136,8 +135,7 @@ struct HelloWorldView: View {
             }
             flowManager.subscribeTransaction(txId: txId)
         } catch {
-            // TODO: Improve Error Handling
-            print(error)
+            flowManager.showErrorView(error: error.localizedDescription)
         }
     }
     
