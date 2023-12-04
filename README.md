@@ -8,7 +8,7 @@
 - The local Flow dev wallet to log into test accounts.
 - A template Swift iOS/iPadOS app with sample scripts and transactions to interact with your contract.
 
-🌟 The final deliverable is a Mobile DApp that lets users read and change a greeting field on Flow testnet. (🧨 WalletConnect has not been configured so `DapperSC` and `Lilico` wallets will crash the application)
+🌟 The final deliverable is a Mobile DApp that lets users read and change a greeting field on Flow testnet.
 
 💬 Meet other builders working on this challenge and get help in the [Emerald City Discord](https://discord.gg/emeraldcity)!
 
