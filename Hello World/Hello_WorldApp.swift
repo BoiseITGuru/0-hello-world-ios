@@ -8,6 +8,7 @@
 import SwiftUI
 import FCL
 import Flow
+import FlowComponents
 import ecDAO
 
 @main
@@ -34,15 +35,16 @@ struct Hello_WorldApp: App {
 
         fcl.config
             .put("0xDeployer", value: fcl.currentEnv == .emulator ? "0xf8d6e0586b0a20c7" : testAccount)
-        
-        ecDAOinit()
     }
     
     var body: some Scene {
         WindowGroup {
-            RouterView(title: $title, desc: $description) {
-                HelloWorldView()
+            FlowApp {
+                RouterView(title: $title, desc: $description) {
+                    HelloWorldView()
+                }
             }
+            .ecDAOinit()
         }
     }
 }

@@ -12,8 +12,9 @@ import FlowComponents
 import ecDAO
 
 struct HelloWorldView: View {
-    @State var showCodeSheet: Bool = false
-    @StateObject var codeConfig: CodeViewConfig = CodeViewConfig(title: "Title", description: "Description", swiftCode: Scripts.getGreeting, cadenceCode: Transactions.changeGreeting)
+    @Environment(FlowManager.self) private var flowManager
+    
+    @State var codeConfig: CodeViewConfig?
     @State var greetingDisplay = ""
     @State var showGreetingAlert = false
     @State var greetingText = ""
@@ -27,8 +28,10 @@ struct HelloWorldView: View {
             changeGreetingView
         }
         .frame(maxHeight: .infinity, alignment: .top)
-        .sheet(isPresented: $showCodeSheet, onDismiss: { codeConfig.codeType = .swift }) {
-            CodeSheet(codeType: $codeConfig.codeType, title: $codeConfig.title, description: $codeConfig.description, swiftCode: $codeConfig.swiftCode, cadenceCode: $codeConfig.cadenceCode)
+        .sheet(isPresented: .constant(codeConfig != nil), onDismiss: { codeConfig = nil }) {
+            if let config = codeConfig {
+                CodeSheet(config: .constant(config))
+            }
         }
     }
     
@@ -41,7 +44,7 @@ struct HelloWorldView: View {
 
                 
                 Button(action: {
-                    updateCodeConfig(title: "getGreeting Script", description: "This is the FCL code that runs a script to read your greeting from the Flow Blockchain.", swiftCode: SwiftCode.getGreeting, cadenceCode: Scripts.getGreeting)
+                    self.codeConfig = CodeViewConfig(title: "getGreeting Script", description: "This is the FCL code that runs a script to read your greeting from the Flow Blockchain.", swiftCode: SwiftCode.getGreeting, cadenceCode: Scripts.getGreeting)
                 }, label: {
                     HStack(spacing: 0) {
                         Image(systemName: "chevron.left.slash.chevron.right")
@@ -84,7 +87,7 @@ struct HelloWorldView: View {
 
                 
                 Button(action: {
-                    updateCodeConfig(title: "changeGreeting Transaction", description: "This is the FCL code that runs a transaction to change your greeting on the Flow Blockchain.", swiftCode: SwiftCode.changeGreeting, cadenceCode: Transactions.changeGreeting)
+                    self.codeConfig = CodeViewConfig(title: "changeGreeting Transaction", description: "This is the FCL code that runs a transaction to change your greeting on the Flow Blockchain.", swiftCode: SwiftCode.changeGreeting, cadenceCode: Transactions.changeGreeting)
                 }, label: {
                     HStack(spacing: 0) {
                         Image(systemName: "chevron.left.slash.chevron.right")
@@ -122,29 +125,14 @@ struct HelloWorldView: View {
                 showGreetingAlert.toggle()
             }
         } catch {
-            // TODO: Improve Error Handling
-            print(error)
+            flowManager.txError = error.localizedDescription
         }
     }
     
     func changeGreeting() async {
-        do {
-            let txId = try await fcl.mutate(cadence: Transactions.changeGreeting.code, args: [.string(greetingText)])
-            await MainActor.run {
-                self.greetingText = ""
-            }
-            flowManager.subscribeTransaction(txId: txId)
-        } catch {
-            flowManager.showErrorView(error: error.localizedDescription)
+        await flowManager.mutate(cadence: Transactions.changeGreeting.code, args: [.string(greetingText)])
+        await MainActor.run {
+            self.greetingText = ""
         }
-    }
-    
-    private func updateCodeConfig(title: String, description: String, swiftCode: CadenceCode, cadenceCode: CadenceCode) {
-        codeConfig.title = title
-        codeConfig.description = description
-        codeConfig.swiftCode = swiftCode
-        codeConfig.cadenceCode = cadenceCode
-            
-        self.showCodeSheet = true
     }
 }
