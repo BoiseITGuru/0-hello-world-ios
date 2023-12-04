@@ -7,40 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B1A5FEA2A548CC00068F85E /* FCL in Frameworks */ = {isa = PBXBuildFile; productRef = 2B1A5FE92A548CC00068F85E /* FCL */; };
-		2B1A5FED2A5492400068F85E /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A5FEC2A5492400068F85E /* SignInView.swift */; };
 		2B1A5FEF2A5492780068F85E /* HelloWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A5FEE2A5492780068F85E /* HelloWorldView.swift */; };
-		2B1A5FF42A54953C0068F85E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1A5FF32A54953C0068F85E /* Colors.xcassets */; };
-		2B1A5FF62A5495E40068F85E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A5FF52A5495E40068F85E /* Color.swift */; };
-		2B1A5FFA2A549D1A0068F85E /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A5FF92A549D1A0068F85E /* BackgroundView.swift */; };
 		2B1A5FFE2A54A32F0068F85E /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A5FFC2A54A32F0068F85E /* Transactions.swift */; };
 		2B1A5FFF2A54A32F0068F85E /* Scripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A5FFD2A54A32F0068F85E /* Scripts.swift */; };
-		2B1A60012A54ADC90068F85E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A60002A54ADC90068F85E /* ButtonView.swift */; };
-		2B1A60032A54BACA0068F85E /* WaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A60022A54BACA0068F85E /* WaitingView.swift */; };
+		2B30DBB82B196C5400241D82 /* ecDAO in Frameworks */ = {isa = PBXBuildFile; productRef = 2B30DBB72B196C5400241D82 /* ecDAO */; };
 		2BBFE86C2A548AF600471E99 /* Hello_WorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFE86B2A548AF600471E99 /* Hello_WorldApp.swift */; };
-		2BBFE86E2A548AF600471E99 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFE86D2A548AF600471E99 /* RouterView.swift */; };
 		2BBFE8702A548AF700471E99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBFE86F2A548AF700471E99 /* Assets.xcassets */; };
 		2BBFE8742A548AF700471E99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBFE8732A548AF700471E99 /* Preview Assets.xcassets */; };
-		2BBFE87E2A548C1700471E99 /* FlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFE87D2A548C1700471E99 /* FlowManager.swift */; };
+		2BC661262B1861A20094F320 /* ecDAO in Frameworks */ = {isa = PBXBuildFile; productRef = 2BC661252B1861A20094F320 /* ecDAO */; };
+		2BC6612C2B1909E40094F320 /* ecDAO in Frameworks */ = {isa = PBXBuildFile; productRef = 2BC6612B2B1909E40094F320 /* ecDAO */; };
+		2BC6612E2B1933590094F320 /* SwiftCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC6612D2B1933590094F320 /* SwiftCode.swift */; };
+		2BED29952B1DB452006A7558 /* ecDAO in Frameworks */ = {isa = PBXBuildFile; productRef = 2BED29942B1DB452006A7558 /* ecDAO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B1A5FEC2A5492400068F85E /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		2B1A5FEE2A5492780068F85E /* HelloWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldView.swift; sourceTree = "<group>"; };
-		2B1A5FF32A54953C0068F85E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		2B1A5FF52A5495E40068F85E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		2B1A5FF92A549D1A0068F85E /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		2B1A5FFC2A54A32F0068F85E /* Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		2B1A5FFD2A54A32F0068F85E /* Scripts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scripts.swift; sourceTree = "<group>"; };
-		2B1A60002A54ADC90068F85E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		2B1A60022A54BACA0068F85E /* WaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingView.swift; sourceTree = "<group>"; };
 		2BBFE8682A548AF600471E99 /* Hello World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBFE86B2A548AF600471E99 /* Hello_WorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_WorldApp.swift; sourceTree = "<group>"; };
-		2BBFE86D2A548AF600471E99 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 		2BBFE86F2A548AF700471E99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BBFE8712A548AF700471E99 /* Hello_World.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello_World.entitlements; sourceTree = "<group>"; };
 		2BBFE8732A548AF700471E99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2BBFE87D2A548C1700471E99 /* FlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowManager.swift; sourceTree = "<group>"; };
+		2BC6612D2B1933590094F320 /* SwiftCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCode.swift; sourceTree = "<group>"; };
 		2BEC31842A54CA5700220D44 /* Hello-World-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Hello-World-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -49,7 +38,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B1A5FEA2A548CC00068F85E /* FCL in Frameworks */,
+				2B30DBB82B196C5400241D82 /* ecDAO in Frameworks */,
+				2BED29952B1DB452006A7558 /* ecDAO in Frameworks */,
+				2BC661262B1861A20094F320 /* ecDAO in Frameworks */,
+				2BC6612C2B1909E40094F320 /* ecDAO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,32 +51,19 @@
 		2B1A5FEB2A5490C20068F85E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2BBFE86D2A548AF600471E99 /* RouterView.swift */,
-				2B1A5FEC2A5492400068F85E /* SignInView.swift */,
 				2B1A5FEE2A5492780068F85E /* HelloWorldView.swift */,
-				2B1A60002A54ADC90068F85E /* ButtonView.swift */,
-				2B1A60022A54BACA0068F85E /* WaitingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2B1A5FF02A5494940068F85E /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-				2B1A5FF32A54953C0068F85E /* Colors.xcassets */,
-				2B1A5FF52A5495E40068F85E /* Color.swift */,
-				2B1A5FF92A549D1A0068F85E /* BackgroundView.swift */,
-			);
-			path = Misc;
-			sourceTree = "<group>";
-		};
-		2B1A5FFB2A54A3110068F85E /* Cadence */ = {
+		2B1A5FFB2A54A3110068F85E /* Code */ = {
 			isa = PBXGroup;
 			children = (
 				2B1A5FFD2A54A32F0068F85E /* Scripts.swift */,
 				2B1A5FFC2A54A32F0068F85E /* Transactions.swift */,
+				2BC6612D2B1933590094F320 /* SwiftCode.swift */,
 			);
-			path = Cadence;
+			path = Code;
 			sourceTree = "<group>";
 		};
 		2BBFE85F2A548AF600471E99 = {
@@ -107,9 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				2BEC31842A54CA5700220D44 /* Hello-World-Info.plist */,
-				2BBFE87A2A548BDB00471E99 /* Flow */,
+				2B1A5FFB2A54A3110068F85E /* Code */,
 				2B1A5FEB2A5490C20068F85E /* Views */,
-				2B1A5FF02A5494940068F85E /* Misc */,
 				2BBFE86B2A548AF600471E99 /* Hello_WorldApp.swift */,
 				2BBFE86F2A548AF700471E99 /* Assets.xcassets */,
 				2BBFE8712A548AF700471E99 /* Hello_World.entitlements */,
@@ -124,15 +102,6 @@
 				2BBFE8732A548AF700471E99 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		2BBFE87A2A548BDB00471E99 /* Flow */ = {
-			isa = PBXGroup;
-			children = (
-				2B1A5FFB2A54A3110068F85E /* Cadence */,
-				2BBFE87D2A548C1700471E99 /* FlowManager.swift */,
-			);
-			path = Flow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +121,10 @@
 			);
 			name = "Hello World";
 			packageProductDependencies = (
-				2B1A5FE92A548CC00068F85E /* FCL */,
+				2BC661252B1861A20094F320 /* ecDAO */,
+				2BC6612B2B1909E40094F320 /* ecDAO */,
+				2B30DBB72B196C5400241D82 /* ecDAO */,
+				2BED29942B1DB452006A7558 /* ecDAO */,
 			);
 			productName = "Hello World";
 			productReference = 2BBFE8682A548AF600471E99 /* Hello World.app */;
@@ -183,7 +155,7 @@
 			);
 			mainGroup = 2BBFE85F2A548AF600471E99;
 			packageReferences = (
-				2B1A5FE82A548CC00068F85E /* XCRemoteSwiftPackageReference "fcl-swift" */,
+				2BED29932B1DB452006A7558 /* XCRemoteSwiftPackageReference "Emerald-City-DAO-Component-Library" */,
 			);
 			productRefGroup = 2BBFE8692A548AF600471E99 /* Products */;
 			projectDirPath = "";
@@ -199,7 +171,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B1A5FF42A54953C0068F85E /* Colors.xcassets in Resources */,
 				2BBFE8742A548AF700471E99 /* Preview Assets.xcassets in Resources */,
 				2BBFE8702A548AF700471E99 /* Assets.xcassets in Resources */,
 			);
@@ -212,16 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B1A60032A54BACA0068F85E /* WaitingView.swift in Sources */,
-				2BBFE86E2A548AF600471E99 /* RouterView.swift in Sources */,
-				2B1A5FFA2A549D1A0068F85E /* BackgroundView.swift in Sources */,
-				2B1A5FF62A5495E40068F85E /* Color.swift in Sources */,
 				2B1A5FFF2A54A32F0068F85E /* Scripts.swift in Sources */,
 				2B1A5FEF2A5492780068F85E /* HelloWorldView.swift in Sources */,
-				2B1A60012A54ADC90068F85E /* ButtonView.swift in Sources */,
-				2BBFE87E2A548C1700471E99 /* FlowManager.swift in Sources */,
+				2BC6612E2B1933590094F320 /* SwiftCode.swift in Sources */,
 				2B1A5FFE2A54A32F0068F85E /* Transactions.swift in Sources */,
-				2B1A5FED2A5492400068F85E /* SignInView.swift in Sources */,
 				2BBFE86C2A548AF600471E99 /* Hello_WorldApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +246,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -337,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -371,7 +336,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -415,7 +380,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -457,21 +422,33 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2B1A5FE82A548CC00068F85E /* XCRemoteSwiftPackageReference "fcl-swift" */ = {
+		2BED29932B1DB452006A7558 /* XCRemoteSwiftPackageReference "Emerald-City-DAO-Component-Library" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Outblock/fcl-swift";
+			repositoryURL = "https://github.com/Forge4Flow/Emerald-City-DAO-Component-Library";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.2.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2B1A5FE92A548CC00068F85E /* FCL */ = {
+		2B30DBB72B196C5400241D82 /* ecDAO */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2B1A5FE82A548CC00068F85E /* XCRemoteSwiftPackageReference "fcl-swift" */;
-			productName = FCL;
+			productName = ecDAO;
+		};
+		2BC661252B1861A20094F320 /* ecDAO */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ecDAO;
+		};
+		2BC6612B2B1909E40094F320 /* ecDAO */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ecDAO;
+		};
+		2BED29942B1DB452006A7558 /* ecDAO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BED29932B1DB452006A7558 /* XCRemoteSwiftPackageReference "Emerald-City-DAO-Component-Library" */;
+			productName = ecDAO;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

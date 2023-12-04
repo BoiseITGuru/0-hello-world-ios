@@ -6,10 +6,17 @@
 //
 
 import Foundation
+import FlowComponents
 
-enum Transactions: String {
-    case changeGreeting =
-        """
+enum Transactions: CadenceCode {
+    case changeGreeting
+    
+    var fileName: String {
+        return "change_greeting.cdc"
+    }
+    
+    var code: String {
+        return """
         import HelloWorld from 0xDeployer
 
         transaction(newGreeting: String) {
@@ -22,4 +29,5 @@ enum Transactions: String {
           }
         }
         """
+    }
 }
